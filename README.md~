@@ -18,7 +18,6 @@ Clean up:
 =========
 
 0.	Backed up the existing files.
-
 		tar cjf cms.tar.bz2 cms/
 
 1. 	Identify the time of the attack. The script drops its signature into x.txt in the root 
@@ -31,7 +30,6 @@ Clean up:
 	Copied that file per FTP to my laptop for later reference
 
 3.	The attack script added number of new files. Removed all
-
 		find . -name "index.old.php" -exec rm -f {} \;
 		find . -name "index.1.php" -exec rm -f {} \;
 		find . -name "class.back.php" -exec rm -f {} \;
