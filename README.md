@@ -51,7 +51,7 @@ Clean up:
 	copies of every file modified by adding the extension .bad to the file name. Once the 
 	site is restored these can be deleted with
 	
-		find . -name "*.php" -exec rm -f {} \;
+		find . -name "*.bad" -exec rm -f {} \;
 	
 6.	Checked the .htaccess files
 
